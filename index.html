@@ -49,8 +49,8 @@
                   <h5>Maandag</h5>
                   <div class="inner card-panel purple col s12">
                     <div class="col s12 right-align">
-                      <a class="waves-effect waves-light"><i class="material-icons white-text">delete</i></a>
-                      <a class="waves-effect waves-light"><i class="material-icons white-text">edit</i></a>
+                      <a class="waves-effect waves-light modal-trigger" href="#sureDelete"><i class="material-icons white-text">delete</i></a>
+                      <a class="waves-effect waves-light modal-trigger" href="#editProject"><i class="material-icons white-text">edit</i></a>
                     </div>
                     <div class="col s12 m6">
                       <p>Naam: Project 1</p>
@@ -78,173 +78,7 @@
                 <div id="AgendaFriday" class="wrapper">
                   <h5>Vrijdag</h5>
                 </div>                                                
-                <!--<table class="striped">
-                  <thead>
-                    <tr>
-                        <th data-field="time">Tijd</th>
-                        <th data-field="monday">Maandag</th>
-                        <th data-field="tuesday">Dinsdag</th>
-                        <th data-field="wednesday">Woensdadg</th>
-                        <th data-field="thursday">Donderdag</th>
-                        <th data-field="friday">Vrijdag</th>
-                    </tr>
-                  </thead>
 
-                  <tbody>
-                    <tr>
-                      <td>08:00</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>08:30</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>                      
-                    </tr>
-                    <tr>
-                      <td>09:00</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>09:30</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>10:00</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>10:30</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>11:00</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>11:30</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>12:00</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>12:30</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>13:00</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>13:30</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>14:00</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>14:30</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>15:00</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>15:30</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>16:00</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>16:30</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>17:00</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>                                                                                                         
-                      <td></td>
-                      <td></td>
-                    </tr>                                       
-                  </tbody>
-                </table>-->
               </div>    
             </div> 
           </div>
@@ -256,7 +90,7 @@
     <div class="fixed-action-btn">
       <a class="btn-floating btn-large blue-grey modal-trigger" href="#newProject">
         <i class="large material-icons">add</i>
-      </a>
+      </a> 
     </div>
           
     <aside>
@@ -267,19 +101,162 @@
         <li><a href="contactpersoon.html" class="waves-effect waves-blue-grey">Contactpersonen</a></li>
         <li><a href="#!" class="waves-effect waves-blue-grey">Logout</a>
       </ul>     
-    </aside>
+    </aside> 
+
+    <div id="sureDelete" class="modal">
+      <div class="modal-content">
+        <h4>Verwijder Project</h4>
+        <div class="row">
+            <p>Weet je zeker dat je dit project wilt verwijderen?</p>
+        </div>    
+      </div>
+      <div class="modal-footer">
+        <a class=" modal-action modal-close waves-effect waves-green btn-flat">Opslaan</a>
+        <a class=" modal-action modal-close waves-effect waves-red btn-flat">Annuleer</a>
+      </div>
+    </div>    
 
     <div id="newProject" class="modal">
       <div class="modal-content">
         <h4>Nieuw Project</h4>
-
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="project_name" type="text" class="validate">
+                <label for="project_name">Project naam</label>
+              </div>
+              <div class="input-field col s12">
+                <textarea id="description" class="materialize-textarea"></textarea>
+                <label for="description">Beschrijving</label>
+              </div>
+              <div class="input-field col s6 m3">
+                <input type="date" class="datepicker" id="start_date">
+                <label for="start_date">Start datum</label>
+              </div>
+              <div class="input-field col s6 m3">
+                <input type="text" id="start_time" >
+                <label for="start_time">Start tijd</label>
+              </div>                
+              <div class="input-field col s6 m3">
+                <input type="date" class="datepicker" id="end_date">
+                <label for="end_date">Eind datum</label>
+              </div>
+              <div class="input-field col s6 m3">
+                <input type="text" id="end_time">
+                <label for="end_time">Eind tijd</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="address" type="text" class="validate">
+                <label for="address">Adres</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="location" type="text" class="validate">
+                <label for="location">Plaats</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="zipcode" type="text" class="validate">
+                <label for="zipcode">Postcoce</label>
+              </div>
+              <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Kies klant</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Klant toevoegen</label>
+              </div>
+              <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Kies contactpersoon</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Contactpersoon toevoegen</label>
+              </div>                                                                                                                        
+            </div>
+          </form>
+        </div>
       </div>
       <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Add</a>
-        <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
+        <a class=" modal-action modal-close waves-effect waves-green btn-flat">Opslaan</a>
+        <a class=" modal-action modal-close waves-effect waves-red btn-flat">Annuleer</a>
       </div>
     </div>
-    
+   
+    <div id="editProject" class="modal">
+      <div class="modal-content">
+        <h4>Bewerk Project</h4>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="project_name" type="text" class="validate">
+                <label for="project_name">Project naam</label>
+              </div>
+              <div class="input-field col s12">
+                <textarea id="description" class="materialize-textarea"></textarea>
+                <label for="description">Beschrijving</label>
+              </div>
+              <div class="input-field col s6 m3">
+                <input type="date" class="datepicker" id="start_date">
+                <label for="start_date">Start datum</label>
+              </div>
+              <div class="input-field col s6 m3">
+                <input type="text" id="start_time" >
+                <label for="start_time">Start tijd</label>
+              </div>                
+              <div class="input-field col s6 m3">
+                <input type="date" class="datepicker" id="end_date">
+                <label for="end_date">Eind datum</label>
+              </div>
+              <div class="input-field col s6 m3">
+                <input type="text" id="end_time">
+                <label for="end_time">Eind tijd</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="address" type="text" class="validate">
+                <label for="address">Adres</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="location" type="text" class="validate">
+                <label for="location">Plaats</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="zipcode" type="text" class="validate">
+                <label for="zipcode">Postcoce</label>
+              </div>
+              <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Kies klant</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Klant toevoegen</label>
+              </div>
+              <div class="input-field col s12">
+                <select>
+                  <option value="" disabled selected>Kies contactpersoon</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <label>Contactpersoon toevoegen</label>
+              </div>                                                                                                                        
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a class=" modal-action modal-close waves-effect waves-green btn-flat">Opslaan</a>
+        <a class=" modal-action modal-close waves-effect waves-red btn-flat">Annuleer</a>
+      </div>
+    </div>
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
     <script type="text/javascript" src="js/script.js"></script>

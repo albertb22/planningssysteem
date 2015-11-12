@@ -48,6 +48,11 @@ aside ul.side-nav li a {
 	padding: 0px 30px 0px 30px;
 }
 
+.modal {
+	max-height: 90%;
+	top: 5% !important;
+}
+
 .wrapper {
 	padding-top: 10px;
 	border-bottom: 1px solid #607D8B;

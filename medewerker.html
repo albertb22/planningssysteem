@@ -38,8 +38,8 @@
                   <h5><a href="medewerkerindex.html">Klaas Koekje</a></h5>
                   <div class="inner card-panel purple col s12">
                     <div class="col s12 right-align">
-                      <a class="waves-effect waves-light"><i class="material-icons white-text">delete</i></a>
-                      <a class="waves-effect waves-light"><i class="material-icons white-text">edit</i></a>
+                      <a class="waves-effect waves-light modal-trigger" href="#sureDelete"><i class="material-icons white-text">delete</i></a>
+                      <a class="waves-effect waves-light modal-trigger" href="#editWorker"><i class="material-icons white-text">edit</i></a>
                     </div>                    
                     <div class="col s12 m6">
                       <p>Adres:</p>
@@ -62,7 +62,7 @@
     </main>
 
     <div class="fixed-action-btn">
-      <a class="btn-floating btn-large blue-grey modal-trigger" href="#newEmployee">
+      <a class="btn-floating btn-large blue-grey modal-trigger" href="#addWorker">
         <i class="large material-icons">add</i>
       </a>
     </div>
@@ -77,14 +77,208 @@
       </ul>     
     </aside>
 
-    <div id="newEmployee" class="modal">
+    <div id="sureDelete" class="modal">
       <div class="modal-content">
-        <h4>Nieuwe Medewerker</h4>
-        
+        <h4>Verwijder Medewerker</h4>
+        <div class="row">
+            <p>Weet je zeker dat je deze medewerker wilt verwijderen?</p>
+        </div>    
       </div>
       <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Add</a>
-        <a href="#!" class=" modal-action modal-close waves-effect waves-red btn-flat">Cancel</a>
+        <a class=" modal-action modal-close waves-effect waves-green btn-flat">Opslaan</a>
+        <a class=" modal-action modal-close waves-effect waves-red btn-flat">Annuleer</a>
+      </div>
+    </div>    
+
+    <div id="addWorker" class="modal">
+      <div class="modal-content">
+        <h4>Nieuwe Medewerker</h4>
+         <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="username" type="text" class="validate">
+                <label for="username">Gebruikersnaam</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Wachtwoord</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="name" type="text" class="validate">
+                <label for="name">Voornaam</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="lastName" type="text" class="validate">
+                <label for="lastName">Achternaam</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="address" type="text" class="validate">
+                <label for="address">Adres</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="location" type="text" class="validate">
+                <label for="location">Plaats</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="zipcode" type="text" class="validate">
+                <label for="zipcode">Postcoce</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="telephone" type="text" class="validate">
+                <label for="telephone">Telefoon</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">E-mail</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="specialisation" type="email" class="validate">
+                <label for="specialisation">Specialisatie</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="mon_start_time" >
+                <label for="mon_start_time">Maandag start tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="mon_end_time" >
+                <label for="mon_end_time">Maandag eind tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="tue_start_time" >
+                <label for="tue_start_time">Dinsdag start tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="tue_end_time" >
+                <label for="tue_end_time">Dinsdag eind tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="wed_start_time" >
+                <label for="wed_start_time">Woensdag start tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="wed_end_time" >
+                <label for="wed_end_time">Woensdag eind tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="thu_start_time" >
+                <label for="thu_start_time">Donderdag start tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="thu_end_time" >
+                <label for="thu_end_time">Donderdag eind tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="fri_start_time" >
+                <label for="fri_start_time">Vrijdag start tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="fri_end_time" >
+                <label for="fri_end_time">Vrijdag eind tijd</label>
+              </div>
+            </div>
+          </form>
+        </div>             
+      </div>
+      <div class="modal-footer">
+        <a class=" modal-action modal-close waves-effect waves-green btn-flat">Opslaan</a>
+        <a class=" modal-action modal-close waves-effect waves-red btn-flat">Annuleer</a>
+      </div>
+    </div>
+
+    <div id="editWorker" class="modal">
+      <div class="modal-content">
+        <h4>Bewerk Medewerker</h4>
+         <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="username" type="text" class="validate">
+                <label for="username">Gebruikersnaam</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Wachtwoord</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="name" type="text" class="validate">
+                <label for="name">Voornaam</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="lastName" type="text" class="validate">
+                <label for="lastName">Achternaam</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="address" type="text" class="validate">
+                <label for="address">Adres</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="location" type="text" class="validate">
+                <label for="location">Plaats</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="zipcode" type="text" class="validate">
+                <label for="zipcode">Postcoce</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="telephone" type="text" class="validate">
+                <label for="telephone">Telefoon</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">E-mail</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="specialisation" type="email" class="validate">
+                <label for="specialisation">Specialisatie</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="mon_start_time" >
+                <label for="mon_start_time">Maandag start tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="mon_end_time" >
+                <label for="mon_end_time">Maandag eind tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="tue_start_time" >
+                <label for="tue_start_time">Dinsdag start tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="tue_end_time" >
+                <label for="tue_end_time">Dinsdag eind tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="wed_start_time" >
+                <label for="wed_start_time">Woensdag start tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="wed_end_time" >
+                <label for="wed_end_time">Woensdag eind tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="thu_start_time" >
+                <label for="thu_start_time">Donderdag start tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="thu_end_time" >
+                <label for="thu_end_time">Donderdag eind tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="fri_start_time" >
+                <label for="fri_start_time">Vrijdag start tijd</label>
+              </div>
+              <div class="input-field col s6">
+                <input type="text" id="fri_end_time" >
+                <label for="fri_end_time">Vrijdag eind tijd</label>
+              </div>
+            </div>
+          </form>
+        </div>             
+      </div>
+      <div class="modal-footer">
+        <a class=" modal-action modal-close waves-effect waves-green btn-flat">Opslaan</a>
+        <a class=" modal-action modal-close waves-effect waves-red btn-flat">Annuleer</a>
       </div>
     </div>
     
